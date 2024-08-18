@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Estate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            background-color: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Quick Estate</h1>
+        <p>Efficient and Organized Estate Planning</p>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Testator's Personal Information</h2>
+            <form>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <select id="title">
+                        <option>Select</option>
+                        <option>Mr.</option>
+                        <option>Mrs.</option>
+                        <option>Ms.</option>
+                        <option>Dr.</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="middle-name">Middle Name(s)</label>
+                    <input type="text" id="middle-name" placeholder="Middle Name(s)">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                </div>
+                <div class="form-group">
+                    <label for="place-of-birth">Place of Birth</label>
+                    <input type="text" id="place-of-birth" placeholder="Place of Birth">
+                </div>
+                <div class="form-group">
+                    <label for="citizenship">Citizenship</label>
+                    <select id="citizenship">
+                        <option>Select</option>
+                        <option>Country 1</option>
+                        <option>Country 2</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <!-- You can add more sections like Contact Information, Spouse Information, etc. -->
+
+    </div>
+</body>
+</html>
