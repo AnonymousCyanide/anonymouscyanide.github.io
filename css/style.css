@@ -10,6 +10,7 @@ th{
 }
 tr{
     text-align: center;
+    padding: 0.5rem;
 }
 
 tr:nth-child(even){
@@ -282,14 +283,48 @@ tr:nth-child(even){
 }
 
 /* end of progress bar */
-
+.step-wizard-item > a{
+    outline: none;
+    text-decoration: none;
+    color: #21d4fd;
+}
 .progress-body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    
 }
 .content{
     flex:1;
     margin-left: 4rem;
     margin-right: 4rem;
+    border: #555 solid;
+    padding: 1rem;
 }
+
+
+/* Code for sub list */
+
+.sub-list-parent{
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.sub-list-child{
+    display: none;
+  /* position: absolute; */
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.sub-list-child > li:hover{
+    background-color: #555;
+    color: white;
+}
+
+.sub-list-parent:hover .sub-list-child {
+    display: block;
+  }

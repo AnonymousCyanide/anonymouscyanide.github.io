@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <!-- Navbar start -->
-    <div class="navbar">
+      <!-- Navbar start -->
+      <div class="navbar">
 
         <div class="nav-top">
             <div class="nav-top-left"><img src="images/logo.png" alt=""></div>
@@ -29,45 +29,17 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="nav-mid">
-
-            <div class="nav-mid-left">
-
-                <select class="transparent-select" name="estateselect" id="estateselect">
-                    <option value="David">DAVID</option>
-                </select>
-
-                <select class="transparent-select" name="estateselect" id="estateselect">
-                    <option value="David">DAVID</option>
-                </select>
-                <select class="transparent-select" name="estateselect" id="estateselect">
-                    <option value="David">DAVID</option>
-                </select>
-
-            </div>
-
-            <div class="nav-mid-right">
-
-                <a href="http://">Enter state executor Toolkit</a>
-
-            </div>
-        </div>
-
-
-        <div class="nav-bottom">
-            <div class="nav-bottom-left"><input type="button" value="Quick Start"></div>
-            <div class="nav-bottom-right">
-                <a href="http://">Over View</a>
-                <a href="http://">Inventory</a>
-                <a href="http://">Contacts</a>
-                <a href="http://">Documents</a>
-                <a href="http://">Library</a>
-            </div>
-        </div>
-    </div>
-
+<div class="nav-bottom">
+    <ul class="nav-bottom">
+        <li><a class="active" href="home.html">OverView</a></li>
+        <li><a href="#">Inventory</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Documents</a></li>
+        <li><a href="#">Library</a></li>
+        <li style="float:right"><a href="#about">Quick Start</a></li>
+      </ul>
+</div>
+</div>
     <!-- Navbar end -->
 
     <!-- Body Start -->
@@ -76,20 +48,12 @@
 
         <div class="main-body-left">
             <h1> Testators index</h1>
-            <ul>
-                <li>
-                    personal info
-                </li>
-                <li>
-                    spouse info
-                </li>
-                <li>
-                    contact info
-                </li>
-                <li>
-                    additional info
-                </li>
-            </ul>
+            <ul class="main-body-left-ul">
+                <li class = "sub-list-parent">  Sublist Example <ul class = "sub-list-child"><li>a</li><li>b</li><li>c</li></ul></li>
+                <li class = "sub-list-parent"><a href="#news">Contact info</a></li>
+                <li class = "sub-list-parent"><a href="#contact">Estate info</a></li>
+                <li class = "sub-list-parent"><a href="#about">Additional info</a></li>
+              </ul>
         </div>
         <div class="main-body-right">
             
