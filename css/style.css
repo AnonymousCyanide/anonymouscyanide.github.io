@@ -232,6 +232,7 @@ tr:nth-child(odd){
     flex-direction: column;
     background-color: #f5f6f8;
     padding-top: 1rem;
+    padding-left: 1rem;
     padding-bottom: 2rem;;
 }
 .main-body-left-head{
