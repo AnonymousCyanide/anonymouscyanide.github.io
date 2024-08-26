@@ -650,9 +650,72 @@ tr:nth-child(odd){
 
 .home-img-container{
     background-image: url('home.jpg');
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
+    width: 100vw;
+    height: 80vh;
     background-size: cover;
-   
+    display: flex;   
     
 }
+
+.home-img-btn-container{
+    flex: 3;
+    background-color: rgba(0,0,0,0.1);
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.home-img-btn-container > a{
+
+    text-decoration: none;
+    color: white;
+    margin-left: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--custom-cyan);
+
+}
+
+
+
+
+.home-img-text{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    text-shadow: #000;
+    flex : 2;
+    align-items: center;
+/* background-color: #04137e; */
+
+height: 100%;
+}
+
+
+.home-img-text-title{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    align-self:baseline;
+    justify-self: baseline;
+    /* background-color: #04AA6D; */
+
+    font-weight: bold;
+    font-size: 50px;
+    }
+
+.home-img-text-content{
+    flex: 1;
+    
+    width: 100%;
+    text-align: right;
+    
+}
+    
