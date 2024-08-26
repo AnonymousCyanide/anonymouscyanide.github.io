@@ -107,6 +107,13 @@ tr:nth-child(odd){
    text-decoration: none;
 }
 
+
+.nav-img{
+
+    width: 130px;
+    height: 80px;
+}
+
 .nav-mid{
     display: flex;
     background-color: var(--custom-cyan);
