@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hexagon Background Layout</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+
+  <!-- Foreground Content -->
+  <div class="content">
+
+    <section class = "hero-section">
+      <h1 class="hero-title">Transform Your Ideas Into Code. Instantly.</h1>
+   <p class="hero-para">
+  Build high-converting landing pages or UIs by simply describing your idea <br> or uploading a screenshot.
+</p>
+
+
+    <div class="hero-bullets">
+  <span>⚡ Fast Prototyping</span>
+  <span>🔒 Secure by Default</span>
+  <span>🚀 Deploy in 1 Click</span>
+</div>
+        <div class="mouse-follower"></div>
+        
+      <div class="hero-action-btn-container" >
+
+       <a href="#get-started" class="hero-action-btn" role="button" aria-label="Try For Free">Try For Free</a>
+
+    
+    </div>
+      <div class="hero-video-container">
+
+        <video class="hero-video" poster="0s.jpg" autoplay muted loop playsinline>
+            <source src = "video.webm" type = "video/webm"> 
+
+        </video>
+      </div>
+    </section>
+
+
+  </div>
+<script>
+  const heroSection = document.querySelector('.hero-section');
+  const follower = document.querySelector('.mouse-follower');
+
+  heroSection.addEventListener('mouseenter', () => {
+    follower.style.opacity = 1;
+  });
+
+  heroSection.addEventListener('mouseleave', () => {
+    follower.style.opacity = 0;
+  });
+
+  heroSection.addEventListener('mousemove', (e) => {
+    const rect = heroSection.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    follower.style.left = `${x}px`;
+    follower.style.top = `${y}px`;
+  });
+</script>
+
+
+</body>
+</html>
